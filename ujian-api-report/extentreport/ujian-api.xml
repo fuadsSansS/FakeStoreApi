@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="6.341">
+    <testcase classname="Tambah Data Produk" name="Tambah Data Produk" time="3.66">
+        <system-out><![CDATA[Given Saya Mendapatkan Base Url.............................................passed
+And Saya Mengirim Data Produk...............................................passed
+Then Validasi Data Yang Di Tambahkan........................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Menghapus Data Produck" name="Menghapus Data Produck" time="0.833">
+        <system-out><![CDATA[Given Mendapatkan Base Url..................................................passed
+And Mengirim Request Hapus..................................................passed
+Then Validasi Code Respon...................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Mengambil Data Pengguna Tunggal" name="Mendapatkan data pengguna berdasarkan ID" time="0.702">
+        <system-out><![CDATA[Given Saya memiliki base URL................................................passed
+When Saya mengirim permintaan GET ke "products/1"...........................passed
+Then Kode status respons harus 200..........................................passed
+And Respons harus berisi data pengguna dengan ID 1..........................passed
+And Respons harus memiliki tipe konten "application/json; charset=utf-8"....passed
+And Validasi Nama Title "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops".passed
+Then Validasi Rating Rate 3.9...............................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Update Date Produk" name="Update Data Produk" time="0.888">
+        <system-out><![CDATA[Given Mendapatkan Base Url Put..............................................passed
+And Mengirim Permintaan Put Ke Id...........................................passed
+And Validasi Kode Respon....................................................passed
+]]></system-out>
+    </testcase>
+</testsuite>
